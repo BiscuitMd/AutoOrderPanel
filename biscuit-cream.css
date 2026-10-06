@@ -1,0 +1,501 @@
+/* 🍪 Biscuit Cream Theme - Pterodactyl Panel */
+/* Protec By @biscuitMD */
+
+:root {
+    --cream-bg: #f5e6c8;
+    --cream-card: #f0dfc0;
+    --cream-light: #faf0d8;
+    --cream-dark: #e8d4a8;
+    --gold: #d4af37;
+    --gold-dark: #b8941f;
+    --black: #1a1a1a;
+    --black-soft: #2a2a2a;
+    --red: #d32f2f;
+    --radius: 20px;
+    --radius-sm: 12px;
+    --border: 2px solid var(--black);
+    --border-thick: 3px solid var(--black);
+    --shadow: 4px 4px 0 var(--black);
+    --shadow-lg: 6px 6px 0 var(--black);
+    --font: 'Segoe UI', 'Poppins', system-ui, sans-serif;
+    --font-bold: 800;
+}
+
+/* ============ BASE ============ */
+body,
+body.dark,
+body.light {
+    background: var(--cream-bg) !important;
+    color: var(--black-soft) !important;
+    font-family: var(--font) !important;
+    font-weight: 600 !important;
+}
+
+/* ============ HEADER ============ */
+#app .navbar,
+.navbar {
+    background: var(--red) !important;
+    border-bottom: var(--border-thick) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    text-shadow: 2px 2px 0 var(--black) !important;
+}
+
+.navbar .nav-link,
+.navbar i {
+    color: #fff !important;
+}
+
+/* ============ SUBNAV (Console, Files, dll) ============ */
+.subnav,
+.nav-tabs {
+    background: var(--cream-card) !important;
+    border-bottom: var(--border-thick) !important;
+    padding: 10px !important;
+}
+
+.subnav .nav-link,
+.nav-tabs .nav-link {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+    border: var(--border) !important;
+    border-radius: 30px !important;
+    padding: 8px 22px !important;
+    margin: 0 5px !important;
+    font-weight: var(--font-bold) !important;
+    box-shadow: var(--shadow) !important;
+    transition: all 0.15s ease !important;
+}
+
+.subnav .nav-link:hover,
+.nav-tabs .nav-link:hover {
+    background: var(--gold) !important;
+    transform: translate(-2px, -2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.subnav .nav-link.active,
+.nav-tabs .nav-link.active {
+    background: var(--red) !important;
+    color: #fff !important;
+    box-shadow: var(--shadow) !important;
+}
+
+/* ============ CONTAINER ============ */
+#app .container,
+.container-fluid {
+    background: var(--cream-bg) !important;
+}
+
+/* ============ CARDS ============ */
+.card {
+    background: var(--cream-card) !important;
+    border: var(--border-thick) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-lg) !important;
+    margin-bottom: 20px !important;
+    overflow: hidden !important;
+}
+
+.card-header {
+    background: var(--cream-light) !important;
+    border-bottom: var(--border) !important;
+    color: var(--black) !important;
+    font-weight: var(--font-bold) !important;
+    padding: 15px 20px !important;
+}
+
+.card-body {
+    background: var(--cream-card) !important;
+    color: var(--black-soft) !important;
+}
+
+/* ============ TOMBOL START/RESTART/STOP ============ */
+.btn {
+    border: var(--border) !important;
+    border-radius: 30px !important;
+    padding: 12px 32px !important;
+    font-weight: var(--font-bold) !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px !important;
+    box-shadow: var(--shadow) !important;
+    transition: all 0.15s ease !important;
+    text-transform: none !important;
+}
+
+.btn:hover {
+    transform: translate(-2px, -2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.btn:active {
+    transform: translate(2px, 2px) !important;
+    box-shadow: 1px 1px 0 var(--black) !important;
+}
+
+.btn-primary {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+}
+
+.btn-success {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+}
+
+.btn-danger {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+}
+
+.btn-secondary {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+}
+
+.btn-warning {
+    background: var(--gold) !important;
+    color: var(--black) !important;
+}
+
+/* ============ CONSOLE ============ */
+.console,
+#terminal,
+.terminal,
+.xterm,
+.xterm-viewport {
+    background: var(--black) !important;
+    color: var(--cream-light) !important;
+    border: var(--border-thick) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-lg) !important;
+    padding: 20px !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+.console .output,
+.terminal-output {
+    background: var(--black) !important;
+    color: var(--cream-light) !important;
+}
+
+/* Command input */
+.console-input,
+.input-group .form-control {
+    background: var(--cream-light) !important;
+    border: var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--black) !important;
+    font-weight: var(--font-bold) !important;
+    padding: 12px 18px !important;
+}
+
+.console-input::placeholder {
+    color: #888 !important;
+}
+
+/* ============ STATS BOX (Address, Uptime, dll) ============ */
+.stat-block,
+.server-stats .row > div,
+.info-box,
+[class*="stats"] {
+    background: var(--cream-card) !important;
+    border: var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: var(--shadow) !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.stat-block .label,
+.stat-block small,
+.info-box .label {
+    color: #666 !important;
+    font-weight: var(--font-bold) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 11px !important;
+}
+
+.stat-block .value,
+.info-box .value {
+    color: var(--black) !important;
+    font-weight: 900 !important;
+    font-size: 18px !important;
+}
+
+/* Progress bar merah di uptime */
+.progress,
+.progress-bar {
+    background: var(--cream-dark) !important;
+    border: var(--border) !important;
+    border-radius: 20px !important;
+    height: 20px !important;
+}
+
+.progress-bar.bg-danger,
+.progress-bar[style*="background"] {
+    background: var(--red) !important;
+}
+
+/* ============ TABLES ============ */
+.table {
+    background: var(--cream-card) !important;
+    border: var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden !important;
+}
+
+.table thead th {
+    background: var(--gold) !important;
+    color: var(--black) !important;
+    border-bottom: var(--border) !important;
+    font-weight: var(--font-bold) !important;
+}
+
+.table td {
+    background: var(--cream-light) !important;
+    color: var(--black) !important;
+    border-color: var(--cream-dark) !important;
+}
+
+/* ============ FORMS ============ */
+.form-control,
+input,
+select,
+textarea {
+    background: var(--cream-light) !important;
+    border: var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--black) !important;
+    padding: 12px 16px !important;
+    font-weight: 600 !important;
+}
+
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.3) !important;
+}
+
+/* ============ BUTTONS FLOATING (Speaker & Fullscreen) ============ */
+.btn-floating,
+.position-absolute .btn,
+button[class*="float"] {
+    background: var(--cream-light) !important;
+    border: var(--border-thick) !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: var(--shadow) !important;
+    color: var(--black) !important;
+}
+
+.btn-floating:hover {
+    background: var(--gold) !important;
+    transform: translate(-2px, -2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* ============ SIDEBAR ============ */
+.sidebar,
+.nav-sidebar {
+    background: var(--cream-card) !important;
+    border-right: var(--border-thick) !important;
+}
+
+.sidebar .nav-link {
+    color: var(--black) !important;
+    border-radius: var(--radius-sm) !important;
+    margin: 4px 8px !important;
+    font-weight: var(--font-bold) !important;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: var(--gold) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+/* ============ MODAL ============ */
+.modal-content {
+    background: var(--cream-card) !important;
+    border: var(--border-thick) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.modal-header {
+    background: var(--red) !important;
+    color: #fff !important;
+    border-bottom: var(--border) !important;
+}
+
+.modal-body {
+    background: var(--cream-card) !important;
+    color: var(--black) !important;
+}
+
+/* ============ ALERTS ============ */
+.alert {
+    border: var(--border-thick) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: var(--shadow) !important;
+    font-weight: var(--font-bold) !important;
+}
+
+.alert-success {
+    background: #c8e6c9 !important;
+    color: var(--black) !important;
+}
+
+.alert-danger {
+    background: #ffcdd2 !important;
+    color: var(--black) !important;
+}
+
+.alert-warning {
+    background: #ffe0b2 !important;
+    color: var(--black) !important;
+}
+
+.alert-info {
+    background: #b3e5fc !important;
+    color: var(--black) !important;
+}
+
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream-dark);
+    border-left: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border: var(--border);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-dark);
+}
+
+/* ============ BADGE ============ */
+.badge {
+    border: var(--border) !important;
+    border-radius: 20px !important;
+    padding: 6px 14px !important;
+    font-weight: var(--font-bold) !important;
+    box-shadow: 2px 2px 0 var(--black) !important;
+}
+
+.badge-success,
+.badge.bg-success {
+    background: #c8e6c9 !important;
+    color: var(--black) !important;
+}
+
+.badge-danger,
+.badge.bg-danger {
+    background: #ffcdd2 !important;
+    color: var(--black) !important;
+}
+
+.badge-warning,
+.badge.bg-warning {
+    background: var(--gold) !important;
+    color: var(--black) !important;
+}
+
+/* ============ TEXT ============ */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--black) !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.5px !important;
+}
+
+p, span, div {
+    color: var(--black-soft);
+}
+
+a {
+    color: var(--gold-dark) !important;
+    font-weight: var(--font-bold) !important;
+}
+
+a:hover {
+    color: var(--red) !important;
+}
+
+/* ============ ICONS ============ */
+i, .fa, .fas, .far {
+    color: inherit;
+}
+
+/* ============ FOOTER ============ */
+.footer,
+footer {
+    background: var(--cream-card) !important;
+    border-top: var(--border-thick) !important;
+    color: var(--black) !important;
+    padding: 20px !important;
+    font-weight: var(--font-bold) !important;
+}
+
+/* ============ PRO TEC BADGE ============ */
+.protec-badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--black);
+    border: var(--border-thick);
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow);
+    z-index: 9999;
+    font-size: 13px;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+    }
+
+    .card {
+        border-radius: 16px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .console,
+    #terminal {
+        border-radius: 16px !important;
+        padding: 12px !important;
+        font-size: 12px !important;
+    }
+
+    .subnav .nav-link {
+        padding: 6px 14px !important;
+        font-size: 12px !important;
+    }
+}
